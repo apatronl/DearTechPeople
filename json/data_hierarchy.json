@@ -1,0 +1,327 @@
+[
+    {
+        "name": "media", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "BuzzFeed"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "marketplace", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "Airbnb", 
+                    "Chariot", 
+                    "GoFundMe", 
+                    "Opendoor", 
+                    "Patreon", 
+                    "SeatGeek"
+                ]
+            }, 
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Knotel"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "infrastructure", 
+        "children": [
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Aryaka Networks", 
+                    "Blue Jeans Network", 
+                    "Digital Ocean", 
+                    "Docker", 
+                    "Pivotal", 
+                    "Rubrik", 
+                    "Twilio", 
+                    "Zoom"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "financial", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "Affirm", 
+                    "Credit Karma", 
+                    "Robinhood", 
+                    "SoFi"
+                ]
+            }, 
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Blend", 
+                    "Funding Circle", 
+                    "Plaid", 
+                    "Square", 
+                    "Stripe"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "blockchain", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "Coinbase"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "gaming", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "DraftKings"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "marketing", 
+        "children": [
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Buffer", 
+                    "Intercom", 
+                    "LiveRamp", 
+                    "Optimizely", 
+                    "SendGrid", 
+                    "Zendesk", 
+                    "Zenreach"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "social", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "GlassDoor", 
+                    "Medium", 
+                    "Pinterest", 
+                    "Quora", 
+                    "Reddit", 
+                    "Snap", 
+                    "Strava"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "storage", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "Dropbox"
+                ]
+            }, 
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Box"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "hardware", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "Cruise Automation", 
+                    "Magic Leap", 
+                    "Ring", 
+                    "Waymo"
+                ]
+            }, 
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Snowflake"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "analytics", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "Hudl"
+                ]
+            }, 
+            {
+                "name": "enterprise", 
+                "children": [
+                    "AppDynamics", 
+                    "Cohesity", 
+                    "CultureAmp", 
+                    "Databricks", 
+                    "Looker", 
+                    "Medallia", 
+                    "New Relic", 
+                    "Planet", 
+                    "Splunk"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "no sector", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "US Digital Services"
+                ]
+            }, 
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Glint", 
+                    "Namely", 
+                    "Zenefits"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "healthcare", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "23andMe", 
+                    "Omada Health", 
+                    "Oscar Health"
+                ]
+            }, 
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Clover Health", 
+                    "Collective Health", 
+                    "Flatiron Health", 
+                    "Grail"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "productivity", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "Evernote", 
+                    "Github", 
+                    "Zapier"
+                ]
+            }, 
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Checkr", 
+                    "Flexport", 
+                    "Gusto", 
+                    "Invision", 
+                    "ProCore", 
+                    "Replicon", 
+                    "Slack"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "security", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "Dashlane"
+                ]
+            }, 
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Cybereason", 
+                    "Cylance", 
+                    "Duo Security", 
+                    "Menlo Security", 
+                    "Okta", 
+                    "Shape Security"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "education", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "Udacity"
+                ]
+            }, 
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Clever"
+                ]
+            }
+        ]
+    }, 
+    {
+        "name": "ecommerce", 
+        "children": [
+            {
+                "name": "consumer", 
+                "children": [
+                    "Blue Apron", 
+                    "Casper", 
+                    "DoorDash", 
+                    "Eventbrite", 
+                    "Everlane", 
+                    "Glossier", 
+                    "Houzz", 
+                    "Instacart", 
+                    "Rent the Runway", 
+                    "StitchFix", 
+                    "Wish"
+                ]
+            }, 
+            {
+                "name": "enterprise", 
+                "children": [
+                    "Shopify"
+                ]
+            }
+        ]
+    }
+]
