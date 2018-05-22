@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dear Tech People</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/css/bootstrap-slider.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <br/>
+    <div class="container">
+        <h1 align="center" style = "color:#3bfc3b;">Dear Tech People</h1>
+    </div>
+    <br/>
+    <!-- <div class="jumbotron jumbotron-fluid" align="center">
+        <div class="container">
+            <h3>What Makes Countries Happy?</h3>
+            <p class="description">
+                In the interactive bubble chart below, you can see the estimated extent to which these six factors bring happiness to countries around the world. Use the slider to see data for different years, hover over a bubble to see details about the country, or select a filter to view the graph corresponding to that factor.
+            </p>
+        </div>
+    </div> -->
+
+<!-- START: Sunburst -->
+
+    <!-- <div class = "jumbotron"> -->
+        <div align="center" id="sunburst_svg">
+        <!-- style="border: 1px solid #888;" -->
+        <!-- viewBox="0 0 1000 600"  preserveAspectRatio="xMidYMid meet"-->
+            <svg width="1000" height="600">
+            </svg>
+        </div>
+	<!-- </div> -->
+
+<!-- END: Sunburst -->
+
+    <br/><br/>
+
+
+    <br><br>
+
+	<div align="center">
+		<p style="font-size:10pt">Made with 💚 by Alejandrina Patrón</p>
+        <a href="mailto:apl7@gatech.edu" class="btn-social btn-outline"><i class="fa fa-lg fa-fw fa-envelope"></i></a>
+        <a href="https://apatronl.github.io" target="_blank" class="btn-social btn-outline"><i class="fa fa-lg fa-fw fa-globe"></i></a>
+        <a href="https://www.linkedin.com/in/alejandrinapatron" target="_blank" class="btn-social btn-outline"><i class="fa fa-lg fa-fw fa-linkedin"></i></a>
+        <a href="https://www.github.com/apatronl" target="_blank" class="btn-social btn-outline"><i class="fa fa-lg fa-fw fa-github"></i></a>
+        <p></p>
+        <a style="font-size:13px;" href="https://github.com/apatronl/DearTechPeople" target="_blank">Source Code</a> | <a style="font-size:13px;" href="http://www.deartechpeople.com/" target="_blank">Dear Tech People</a>
+        <br></br>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+<script src="./js/sunburst.js"></script>
+
+</html>

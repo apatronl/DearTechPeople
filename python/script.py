@@ -7,11 +7,9 @@ def buildDataHierarchy():
     data_dict = {}
     for row in reader:
         sector = row['sector_1']
-        secondary_sector = row['sector_2']
-        # if secondary_sector != '':
-        #     print secondary_sector
         customer_base = row['customer_base_1']
         company = row['company_name']
+
         if sector == '':
             sector = 'no sector'
 
@@ -25,13 +23,13 @@ def buildDataHierarchy():
         else:
             data_dict[sector] = {customer_base: [company]}
 
-    data = []
+    data = {'name': 'deartechpeople', 'children': []}
     for (sector, value) in data_dict.items():
         json_dict = {'name': sector, 'children': []}
         for (customer, companies) in value.items():
             children_dict = {'name': customer, 'children': companies}
             json_dict['children'].append(children_dict)
-        data.append(json_dict)
+        data['children'].append(json_dict)
 
     data_json = json.dumps(data, indent=4)
     json_file = open('../json/data_hierarchy.json', 'w')
@@ -41,3 +39,11 @@ def buildDataHierarchy():
 
 if __name__ == '__main__':
     buildDataHierarchy()
+
+
+
+#######################################################
+# secondary_sector = row['sector_2']
+# if secondary_sector != '':
+#     print secondary_sector
+#######################################################
