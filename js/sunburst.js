@@ -73,6 +73,8 @@ function drawVisualization(json) {
         .attr("d", arc)
         .attr("fill-rule", "evenodd")
         .style("fill", function(d) {
+            if (d.data.name == 'percent_female') return '#ff66b7';
+            if (d.data.name == 'percent_male') return '#66bcff';
             if (d.children) return color(d.data.name);
             return color(d.parent.data.name);
         })
@@ -108,6 +110,7 @@ function mouseover(d) {
             .style("opacity", 1);
         return;
     }
+    console.log(d);
   // var percentage = (100 * d.value / totalSize).toPrecision(3);
   // var percentageString = percentage + "%";
   // if (percentage < 0.1) {
@@ -134,11 +137,25 @@ function mouseover(d) {
     vis.selectAll('.sunburst-text').remove();
     vis.append('text')
         .attr('class', 'sunburst-text')
-        .text(d.data.name);
+        .text(toTitleCase(d.data.name));
 }
 
 function mouseleave(d) {
     vis.selectAll("path")
         .style("opacity", 1);
     showMainCenterText();
+}
+
+/**
+    Depth Mapping
+    1 - Sector
+    2 - Customer Base
+    3 - Company
+    4 - Gender Distribution
+**/
+
+function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function(txt){
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
 }

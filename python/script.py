@@ -15,7 +15,7 @@ def buildDataHierarchy():
         if sector == '':
             sector = 'no sector'
 
-        company_dict = { 'name': company, 'children': [{ 'name': 'total_male', 'size': total_male }, { 'name': 'total_female', 'size': total_female }] }
+        company_dict = { 'name': company, 'children': [{ 'name': 'percent_male', 'size': 100*(total_male)/float(total_male + total_female) }, { 'name': 'percent_female', 'size': 100*(total_female)/float(total_male + total_female) }] }
 
         if sector in data_dict:
             sector_dict = data_dict[sector]

@@ -11,12 +11,12 @@
                             "name": "BuzzFeed", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 669
+                                    "name": "percent_male", 
+                                    "size": 44.39283344392833
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 838
+                                    "name": "percent_female", 
+                                    "size": 55.60716655607167
                                 }
                             ]
                         }
@@ -34,12 +34,12 @@
                             "name": "Airbnb", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 1676
+                                    "name": "percent_male", 
+                                    "size": 52.68783401446086
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 1505
+                                    "name": "percent_female", 
+                                    "size": 47.31216598553914
                                 }
                             ]
                         }, 
@@ -47,12 +47,12 @@
                             "name": "Chariot", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 74
+                                    "name": "percent_male", 
+                                    "size": 55.223880597014926
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 60
+                                    "name": "percent_female", 
+                                    "size": 44.776119402985074
                                 }
                             ]
                         }, 
@@ -60,12 +60,12 @@
                             "name": "GoFundMe", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 137
+                                    "name": "percent_male", 
+                                    "size": 51.31086142322097
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 130
+                                    "name": "percent_female", 
+                                    "size": 48.68913857677903
                                 }
                             ]
                         }, 
@@ -73,12 +73,12 @@
                             "name": "Opendoor", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 232
+                                    "name": "percent_male", 
+                                    "size": 61.21372031662269
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 147
+                                    "name": "percent_female", 
+                                    "size": 38.78627968337731
                                 }
                             ]
                         }, 
@@ -86,12 +86,12 @@
                             "name": "Patreon", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 69
+                                    "name": "percent_male", 
+                                    "size": 56.557377049180324
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 53
+                                    "name": "percent_female", 
+                                    "size": 43.442622950819676
                                 }
                             ]
                         }, 
@@ -99,12 +99,12 @@
                             "name": "SeatGeek", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 143
+                                    "name": "percent_male", 
+                                    "size": 70.44334975369458
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 60
+                                    "name": "percent_female", 
+                                    "size": 29.55665024630542
                                 }
                             ]
                         }
@@ -117,12 +117,12 @@
                             "name": "Knotel", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 62
+                                    "name": "percent_male", 
+                                    "size": 62.62626262626262
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 37
+                                    "name": "percent_female", 
+                                    "size": 37.37373737373738
                                 }
                             ]
                         }
@@ -140,12 +140,12 @@
                             "name": "Aryaka Networks", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 177
+                                    "name": "percent_male", 
+                                    "size": 75.64102564102564
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 57
+                                    "name": "percent_female", 
+                                    "size": 24.358974358974358
                                 }
                             ]
                         }, 
@@ -153,12 +153,12 @@
                             "name": "Blue Jeans Network", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 171
+                                    "name": "percent_male", 
+                                    "size": 66.53696498054475
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 86
+                                    "name": "percent_female", 
+                                    "size": 33.463035019455255
                                 }
                             ]
                         }, 
@@ -166,12 +166,12 @@
                             "name": "Digital Ocean", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 234
+                                    "name": "percent_male", 
+                                    "size": 73.58490566037736
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 84
+                                    "name": "percent_female", 
+                                    "size": 26.41509433962264
                                 }
                             ]
                         }, 
@@ -179,12 +179,12 @@
                             "name": "Docker", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 348
+                                    "name": "percent_male", 
+                                    "size": 80.18433179723502
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 86
+                                    "name": "percent_female", 
+                                    "size": 19.81566820276498
                                 }
                             ]
                         }, 
@@ -192,12 +192,12 @@
                             "name": "Pivotal", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 907
+                                    "name": "percent_male", 
+                                    "size": 73.38187702265373
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 329
+                                    "name": "percent_female", 
+                                    "size": 26.618122977346278
                                 }
                             ]
                         }, 
@@ -205,12 +205,12 @@
                             "name": "Rubrik", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 548
+                                    "name": "percent_male", 
+                                    "size": 82.28228228228228
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 118
+                                    "name": "percent_female", 
+                                    "size": 17.71771771771772
                                 }
                             ]
                         }, 
@@ -218,12 +218,12 @@
                             "name": "Twilio", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 505
+                                    "name": "percent_male", 
+                                    "size": 66.27296587926509
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 257
+                                    "name": "percent_female", 
+                                    "size": 33.727034120734906
                                 }
                             ]
                         }, 
@@ -231,12 +231,12 @@
                             "name": "Zoom", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 379
+                                    "name": "percent_male", 
+                                    "size": 70.97378277153558
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 155
+                                    "name": "percent_female", 
+                                    "size": 29.026217228464418
                                 }
                             ]
                         }
@@ -254,12 +254,12 @@
                             "name": "Affirm", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 202
+                                    "name": "percent_male", 
+                                    "size": 68.24324324324324
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 94
+                                    "name": "percent_female", 
+                                    "size": 31.756756756756758
                                 }
                             ]
                         }, 
@@ -267,12 +267,12 @@
                             "name": "Credit Karma", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 437
+                                    "name": "percent_male", 
+                                    "size": 66.21212121212122
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 223
+                                    "name": "percent_female", 
+                                    "size": 33.78787878787879
                                 }
                             ]
                         }, 
@@ -280,12 +280,12 @@
                             "name": "Robinhood", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 134
+                                    "name": "percent_male", 
+                                    "size": 72.82608695652173
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 50
+                                    "name": "percent_female", 
+                                    "size": 27.17391304347826
                                 }
                             ]
                         }, 
@@ -293,12 +293,12 @@
                             "name": "SoFi", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 540
+                                    "name": "percent_male", 
+                                    "size": 60.879368658399095
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 347
+                                    "name": "percent_female", 
+                                    "size": 39.120631341600905
                                 }
                             ]
                         }
@@ -311,12 +311,12 @@
                             "name": "Blend", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 166
+                                    "name": "percent_male", 
+                                    "size": 67.75510204081633
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 79
+                                    "name": "percent_female", 
+                                    "size": 32.244897959183675
                                 }
                             ]
                         }, 
@@ -324,12 +324,12 @@
                             "name": "Funding Circle", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 138
+                                    "name": "percent_male", 
+                                    "size": 61.607142857142854
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 86
+                                    "name": "percent_female", 
+                                    "size": 38.392857142857146
                                 }
                             ]
                         }, 
@@ -337,12 +337,12 @@
                             "name": "Plaid", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 76
+                                    "name": "percent_male", 
+                                    "size": 69.72477064220183
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 33
+                                    "name": "percent_female", 
+                                    "size": 30.275229357798164
                                 }
                             ]
                         }, 
@@ -350,12 +350,12 @@
                             "name": "Square", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 1223
+                                    "name": "percent_male", 
+                                    "size": 61.488185017596784
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 766
+                                    "name": "percent_female", 
+                                    "size": 38.511814982403216
                                 }
                             ]
                         }, 
@@ -363,12 +363,12 @@
                             "name": "Stripe", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 515
+                                    "name": "percent_male", 
+                                    "size": 63.81660470879802
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 292
+                                    "name": "percent_female", 
+                                    "size": 36.18339529120198
                                 }
                             ]
                         }
@@ -386,12 +386,12 @@
                             "name": "Coinbase", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 171
+                                    "name": "percent_male", 
+                                    "size": 71.84873949579831
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 67
+                                    "name": "percent_female", 
+                                    "size": 28.15126050420168
                                 }
                             ]
                         }
@@ -409,12 +409,12 @@
                             "name": "DraftKings", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 327
+                                    "name": "percent_male", 
+                                    "size": 80.74074074074075
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 78
+                                    "name": "percent_female", 
+                                    "size": 19.25925925925926
                                 }
                             ]
                         }
@@ -432,12 +432,12 @@
                             "name": "Buffer", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 52
+                                    "name": "percent_male", 
+                                    "size": 69.33333333333333
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 23
+                                    "name": "percent_female", 
+                                    "size": 30.666666666666668
                                 }
                             ]
                         }, 
@@ -445,12 +445,12 @@
                             "name": "Intercom", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 265
+                                    "name": "percent_male", 
+                                    "size": 62.35294117647059
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 160
+                                    "name": "percent_female", 
+                                    "size": 37.64705882352941
                                 }
                             ]
                         }, 
@@ -458,12 +458,12 @@
                             "name": "LiveRamp", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 223
+                                    "name": "percent_male", 
+                                    "size": 61.60220994475138
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 139
+                                    "name": "percent_female", 
+                                    "size": 38.39779005524862
                                 }
                             ]
                         }, 
@@ -471,12 +471,12 @@
                             "name": "Optimizely", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 292
+                                    "name": "percent_male", 
+                                    "size": 67.5925925925926
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 140
+                                    "name": "percent_female", 
+                                    "size": 32.407407407407405
                                 }
                             ]
                         }, 
@@ -484,12 +484,12 @@
                             "name": "SendGrid", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 279
+                                    "name": "percent_male", 
+                                    "size": 67.88321167883211
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 132
+                                    "name": "percent_female", 
+                                    "size": 32.11678832116788
                                 }
                             ]
                         }, 
@@ -497,12 +497,12 @@
                             "name": "Zendesk", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 684
+                                    "name": "percent_male", 
+                                    "size": 59.63382737576286
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 463
+                                    "name": "percent_female", 
+                                    "size": 40.36617262423714
                                 }
                             ]
                         }, 
@@ -510,12 +510,12 @@
                             "name": "Zenreach", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 161
+                                    "name": "percent_male", 
+                                    "size": 74.53703703703704
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 55
+                                    "name": "percent_female", 
+                                    "size": 25.462962962962962
                                 }
                             ]
                         }
@@ -533,12 +533,12 @@
                             "name": "GlassDoor", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 446
+                                    "name": "percent_male", 
+                                    "size": 57.4002574002574
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 331
+                                    "name": "percent_female", 
+                                    "size": 42.5997425997426
                                 }
                             ]
                         }, 
@@ -546,12 +546,12 @@
                             "name": "Medium", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 191
+                                    "name": "percent_male", 
+                                    "size": 58.23170731707317
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 137
+                                    "name": "percent_female", 
+                                    "size": 41.76829268292683
                                 }
                             ]
                         }, 
@@ -559,12 +559,12 @@
                             "name": "Pinterest", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 779
+                                    "name": "percent_male", 
+                                    "size": 52.45791245791246
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 706
+                                    "name": "percent_female", 
+                                    "size": 47.54208754208754
                                 }
                             ]
                         }, 
@@ -572,12 +572,12 @@
                             "name": "Quora", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 139
+                                    "name": "percent_male", 
+                                    "size": 58.898305084745765
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 97
+                                    "name": "percent_female", 
+                                    "size": 41.101694915254235
                                 }
                             ]
                         }, 
@@ -585,12 +585,12 @@
                             "name": "Reddit", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 199
+                                    "name": "percent_male", 
+                                    "size": 66.77852348993288
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 99
+                                    "name": "percent_female", 
+                                    "size": 33.22147651006711
                                 }
                             ]
                         }, 
@@ -598,12 +598,12 @@
                             "name": "Snap", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 1548
+                                    "name": "percent_male", 
+                                    "size": 62.04408817635271
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 947
+                                    "name": "percent_female", 
+                                    "size": 37.95591182364729
                                 }
                             ]
                         }, 
@@ -611,12 +611,12 @@
                             "name": "Strava", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 129
+                                    "name": "percent_male", 
+                                    "size": 72.88135593220339
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 48
+                                    "name": "percent_female", 
+                                    "size": 27.11864406779661
                                 }
                             ]
                         }
@@ -634,12 +634,12 @@
                             "name": "Dropbox", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 1003
+                                    "name": "percent_male", 
+                                    "size": 61.345565749235476
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 632
+                                    "name": "percent_female", 
+                                    "size": 38.654434250764524
                                 }
                             ]
                         }
@@ -652,12 +652,12 @@
                             "name": "Box", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 976
+                                    "name": "percent_male", 
+                                    "size": 63.50032530904359
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 561
+                                    "name": "percent_female", 
+                                    "size": 36.49967469095641
                                 }
                             ]
                         }
@@ -675,12 +675,12 @@
                             "name": "Cruise Automation", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 389
+                                    "name": "percent_male", 
+                                    "size": 76.5748031496063
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 119
+                                    "name": "percent_female", 
+                                    "size": 23.4251968503937
                                 }
                             ]
                         }, 
@@ -688,12 +688,12 @@
                             "name": "Magic Leap", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 840
+                                    "name": "percent_male", 
+                                    "size": 77.70582793709528
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 241
+                                    "name": "percent_female", 
+                                    "size": 22.294172062904718
                                 }
                             ]
                         }, 
@@ -701,12 +701,12 @@
                             "name": "Ring", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 318
+                                    "name": "percent_male", 
+                                    "size": 70.35398230088495
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 134
+                                    "name": "percent_female", 
+                                    "size": 29.646017699115045
                                 }
                             ]
                         }, 
@@ -714,12 +714,12 @@
                             "name": "Waymo", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 345
+                                    "name": "percent_male", 
+                                    "size": 77.00892857142857
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 103
+                                    "name": "percent_female", 
+                                    "size": 22.991071428571427
                                 }
                             ]
                         }
@@ -732,12 +732,12 @@
                             "name": "Snowflake", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 236
+                                    "name": "percent_male", 
+                                    "size": 78.40531561461793
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 65
+                                    "name": "percent_female", 
+                                    "size": 21.59468438538206
                                 }
                             ]
                         }
@@ -755,12 +755,12 @@
                             "name": "Hudl", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 307
+                                    "name": "percent_male", 
+                                    "size": 69.77272727272727
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 133
+                                    "name": "percent_female", 
+                                    "size": 30.227272727272727
                                 }
                             ]
                         }
@@ -773,12 +773,12 @@
                             "name": "AppDynamics", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 859
+                                    "name": "percent_male", 
+                                    "size": 76.90241718889884
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 258
+                                    "name": "percent_female", 
+                                    "size": 23.097582811101162
                                 }
                             ]
                         }, 
@@ -786,12 +786,12 @@
                             "name": "Cohesity", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 232
+                                    "name": "percent_male", 
+                                    "size": 84.36363636363636
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 43
+                                    "name": "percent_female", 
+                                    "size": 15.636363636363637
                                 }
                             ]
                         }, 
@@ -799,12 +799,12 @@
                             "name": "CultureAmp", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 85
+                                    "name": "percent_male", 
+                                    "size": 51.204819277108435
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 81
+                                    "name": "percent_female", 
+                                    "size": 48.795180722891565
                                 }
                             ]
                         }, 
@@ -812,12 +812,12 @@
                             "name": "Databricks", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 202
+                                    "name": "percent_male", 
+                                    "size": 79.2156862745098
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 53
+                                    "name": "percent_female", 
+                                    "size": 20.784313725490197
                                 }
                             ]
                         }, 
@@ -825,12 +825,12 @@
                             "name": "Looker", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 246
+                                    "name": "percent_male", 
+                                    "size": 68.14404432132964
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 115
+                                    "name": "percent_female", 
+                                    "size": 31.85595567867036
                                 }
                             ]
                         }, 
@@ -838,12 +838,12 @@
                             "name": "Medallia", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 521
+                                    "name": "percent_male", 
+                                    "size": 58.80361173814899
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 365
+                                    "name": "percent_female", 
+                                    "size": 41.19638826185101
                                 }
                             ]
                         }, 
@@ -851,12 +851,12 @@
                             "name": "New Relic", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 706
+                                    "name": "percent_male", 
+                                    "size": 67.36641221374046
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 342
+                                    "name": "percent_female", 
+                                    "size": 32.63358778625954
                                 }
                             ]
                         }, 
@@ -864,12 +864,12 @@
                             "name": "Planet", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 263
+                                    "name": "percent_male", 
+                                    "size": 70.32085561497327
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 111
+                                    "name": "percent_female", 
+                                    "size": 29.67914438502674
                                 }
                             ]
                         }, 
@@ -877,12 +877,12 @@
                             "name": "Splunk", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 1588
+                                    "name": "percent_male", 
+                                    "size": 71.56376746282109
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 631
+                                    "name": "percent_female", 
+                                    "size": 28.43623253717891
                                 }
                             ]
                         }
@@ -900,12 +900,12 @@
                             "name": "US Digital Services", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 72
+                                    "name": "percent_male", 
+                                    "size": 54.54545454545455
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 60
+                                    "name": "percent_female", 
+                                    "size": 45.45454545454545
                                 }
                             ]
                         }
@@ -918,12 +918,12 @@
                             "name": "Glint", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 79
+                                    "name": "percent_male", 
+                                    "size": 58.95522388059702
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 55
+                                    "name": "percent_female", 
+                                    "size": 41.04477611940298
                                 }
                             ]
                         }, 
@@ -931,12 +931,12 @@
                             "name": "Namely", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 252
+                                    "name": "percent_male", 
+                                    "size": 61.613691931540345
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 157
+                                    "name": "percent_female", 
+                                    "size": 38.386308068459655
                                 }
                             ]
                         }, 
@@ -944,12 +944,12 @@
                             "name": "Zenefits", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 332
+                                    "name": "percent_male", 
+                                    "size": 58.657243816254415
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 234
+                                    "name": "percent_female", 
+                                    "size": 41.342756183745585
                                 }
                             ]
                         }
@@ -967,12 +967,12 @@
                             "name": "23andMe", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 183
+                                    "name": "percent_male", 
+                                    "size": 48.54111405835544
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 194
+                                    "name": "percent_female", 
+                                    "size": 51.45888594164456
                                 }
                             ]
                         }, 
@@ -980,12 +980,12 @@
                             "name": "Omada Health", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 88
+                                    "name": "percent_male", 
+                                    "size": 46.31578947368421
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 102
+                                    "name": "percent_female", 
+                                    "size": 53.68421052631579
                                 }
                             ]
                         }, 
@@ -993,12 +993,12 @@
                             "name": "Oscar Health", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 260
+                                    "name": "percent_male", 
+                                    "size": 55.55555555555556
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 208
+                                    "name": "percent_female", 
+                                    "size": 44.44444444444444
                                 }
                             ]
                         }
@@ -1011,12 +1011,12 @@
                             "name": "Clover Health", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 134
+                                    "name": "percent_male", 
+                                    "size": 39.76261127596439
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 203
+                                    "name": "percent_female", 
+                                    "size": 60.23738872403561
                                 }
                             ]
                         }, 
@@ -1024,12 +1024,12 @@
                             "name": "Collective Health", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 136
+                                    "name": "percent_male", 
+                                    "size": 42.5
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 184
+                                    "name": "percent_female", 
+                                    "size": 57.5
                                 }
                             ]
                         }, 
@@ -1037,12 +1037,12 @@
                             "name": "Flatiron Health", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 241
+                                    "name": "percent_male", 
+                                    "size": 46.34615384615385
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 279
+                                    "name": "percent_female", 
+                                    "size": 53.65384615384615
                                 }
                             ]
                         }, 
@@ -1050,12 +1050,12 @@
                             "name": "Grail", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 126
+                                    "name": "percent_male", 
+                                    "size": 51.851851851851855
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 117
+                                    "name": "percent_female", 
+                                    "size": 48.148148148148145
                                 }
                             ]
                         }
@@ -1073,12 +1073,12 @@
                             "name": "Evernote", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 252
+                                    "name": "percent_male", 
+                                    "size": 64.61538461538461
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 138
+                                    "name": "percent_female", 
+                                    "size": 35.38461538461539
                                 }
                             ]
                         }, 
@@ -1086,12 +1086,12 @@
                             "name": "Github", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 519
+                                    "name": "percent_male", 
+                                    "size": 67.14100905562742
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 254
+                                    "name": "percent_female", 
+                                    "size": 32.85899094437257
                                 }
                             ]
                         }, 
@@ -1099,12 +1099,12 @@
                             "name": "Zapier", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 57
+                                    "name": "percent_male", 
+                                    "size": 67.85714285714286
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 27
+                                    "name": "percent_female", 
+                                    "size": 32.142857142857146
                                 }
                             ]
                         }
@@ -1117,12 +1117,12 @@
                             "name": "Checkr", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 80
+                                    "name": "percent_male", 
+                                    "size": 58.394160583941606
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 57
+                                    "name": "percent_female", 
+                                    "size": 41.605839416058394
                                 }
                             ]
                         }, 
@@ -1130,12 +1130,12 @@
                             "name": "Flexport", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 569
+                                    "name": "percent_male", 
+                                    "size": 60.14799154334038
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 377
+                                    "name": "percent_female", 
+                                    "size": 39.85200845665962
                                 }
                             ]
                         }, 
@@ -1143,12 +1143,12 @@
                             "name": "Gusto", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 235
+                                    "name": "percent_male", 
+                                    "size": 49.16317991631799
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 243
+                                    "name": "percent_female", 
+                                    "size": 50.83682008368201
                                 }
                             ]
                         }, 
@@ -1156,12 +1156,12 @@
                             "name": "Invision", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 254
+                                    "name": "percent_male", 
+                                    "size": 65.12820512820512
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 136
+                                    "name": "percent_female", 
+                                    "size": 34.87179487179487
                                 }
                             ]
                         }, 
@@ -1169,12 +1169,12 @@
                             "name": "ProCore", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 643
+                                    "name": "percent_male", 
+                                    "size": 64.42885771543087
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 355
+                                    "name": "percent_female", 
+                                    "size": 35.57114228456914
                                 }
                             ]
                         }, 
@@ -1182,12 +1182,12 @@
                             "name": "Replicon", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 281
+                                    "name": "percent_male", 
+                                    "size": 79.37853107344633
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 73
+                                    "name": "percent_female", 
+                                    "size": 20.62146892655367
                                 }
                             ]
                         }, 
@@ -1195,12 +1195,12 @@
                             "name": "Slack", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 533
+                                    "name": "percent_male", 
+                                    "size": 58.50713501646542
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 378
+                                    "name": "percent_female", 
+                                    "size": 41.49286498353458
                                 }
                             ]
                         }
@@ -1218,12 +1218,12 @@
                             "name": "Dashlane", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 87
+                                    "name": "percent_male", 
+                                    "size": 75.65217391304348
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 28
+                                    "name": "percent_female", 
+                                    "size": 24.347826086956523
                                 }
                             ]
                         }
@@ -1236,12 +1236,12 @@
                             "name": "Cybereason", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 249
+                                    "name": "percent_male", 
+                                    "size": 75.0
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 83
+                                    "name": "percent_female", 
+                                    "size": 25.0
                                 }
                             ]
                         }, 
@@ -1249,12 +1249,12 @@
                             "name": "Cylance", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 594
+                                    "name": "percent_male", 
+                                    "size": 76.15384615384616
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 186
+                                    "name": "percent_female", 
+                                    "size": 23.846153846153847
                                 }
                             ]
                         }, 
@@ -1262,12 +1262,12 @@
                             "name": "Duo Security", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 356
+                                    "name": "percent_male", 
+                                    "size": 67.16981132075472
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 174
+                                    "name": "percent_female", 
+                                    "size": 32.83018867924528
                                 }
                             ]
                         }, 
@@ -1275,12 +1275,12 @@
                             "name": "Menlo Security", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 84
+                                    "name": "percent_male", 
+                                    "size": 84.84848484848484
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 15
+                                    "name": "percent_female", 
+                                    "size": 15.151515151515152
                                 }
                             ]
                         }, 
@@ -1288,12 +1288,12 @@
                             "name": "Okta", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 1443
+                                    "name": "percent_male", 
+                                    "size": 72.54901960784314
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 546
+                                    "name": "percent_female", 
+                                    "size": 27.45098039215686
                                 }
                             ]
                         }, 
@@ -1301,12 +1301,12 @@
                             "name": "Shape Security", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 137
+                                    "name": "percent_male", 
+                                    "size": 76.11111111111111
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 43
+                                    "name": "percent_female", 
+                                    "size": 23.88888888888889
                                 }
                             ]
                         }
@@ -1324,12 +1324,12 @@
                             "name": "Udacity", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 400
+                                    "name": "percent_male", 
+                                    "size": 63.29113924050633
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 232
+                                    "name": "percent_female", 
+                                    "size": 36.70886075949367
                                 }
                             ]
                         }
@@ -1342,12 +1342,12 @@
                             "name": "Clever", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 61
+                                    "name": "percent_male", 
+                                    "size": 53.982300884955755
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 52
+                                    "name": "percent_female", 
+                                    "size": 46.017699115044245
                                 }
                             ]
                         }
@@ -1365,12 +1365,12 @@
                             "name": "Blue Apron", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 450
+                                    "name": "percent_male", 
+                                    "size": 54.94505494505494
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 369
+                                    "name": "percent_female", 
+                                    "size": 45.05494505494506
                                 }
                             ]
                         }, 
@@ -1378,12 +1378,12 @@
                             "name": "Casper", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 198
+                                    "name": "percent_male", 
+                                    "size": 52.94117647058823
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 176
+                                    "name": "percent_female", 
+                                    "size": 47.05882352941177
                                 }
                             ]
                         }, 
@@ -1391,12 +1391,12 @@
                             "name": "DoorDash", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 680
+                                    "name": "percent_male", 
+                                    "size": 68.41046277665995
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 314
+                                    "name": "percent_female", 
+                                    "size": 31.58953722334004
                                 }
                             ]
                         }, 
@@ -1404,12 +1404,12 @@
                             "name": "Eventbrite", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 403
+                                    "name": "percent_male", 
+                                    "size": 56.76056338028169
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 307
+                                    "name": "percent_female", 
+                                    "size": 43.23943661971831
                                 }
                             ]
                         }, 
@@ -1417,12 +1417,12 @@
                             "name": "Everlane", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 53
+                                    "name": "percent_male", 
+                                    "size": 31.927710843373493
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 113
+                                    "name": "percent_female", 
+                                    "size": 68.07228915662651
                                 }
                             ]
                         }, 
@@ -1430,12 +1430,12 @@
                             "name": "Glossier", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 47
+                                    "name": "percent_male", 
+                                    "size": 17.343173431734318
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 224
+                                    "name": "percent_female", 
+                                    "size": 82.65682656826569
                                 }
                             ]
                         }, 
@@ -1443,12 +1443,12 @@
                             "name": "Houzz", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 430
+                                    "name": "percent_male", 
+                                    "size": 30.561478322672354
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 977
+                                    "name": "percent_female", 
+                                    "size": 69.43852167732764
                                 }
                             ]
                         }, 
@@ -1456,12 +1456,12 @@
                             "name": "Instacart", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 451
+                                    "name": "percent_male", 
+                                    "size": 53.56294536817102
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 391
+                                    "name": "percent_female", 
+                                    "size": 46.43705463182898
                                 }
                             ]
                         }, 
@@ -1469,12 +1469,12 @@
                             "name": "Rent the Runway", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 125
+                                    "name": "percent_male", 
+                                    "size": 29.069767441860463
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 305
+                                    "name": "percent_female", 
+                                    "size": 70.93023255813954
                                 }
                             ]
                         }, 
@@ -1482,12 +1482,12 @@
                             "name": "StitchFix", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 363
+                                    "name": "percent_male", 
+                                    "size": 17.335243553008596
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 1731
+                                    "name": "percent_female", 
+                                    "size": 82.6647564469914
                                 }
                             ]
                         }, 
@@ -1495,12 +1495,12 @@
                             "name": "Wish", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 166
+                                    "name": "percent_male", 
+                                    "size": 53.03514376996805
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 147
+                                    "name": "percent_female", 
+                                    "size": 46.96485623003195
                                 }
                             ]
                         }
@@ -1513,12 +1513,12 @@
                             "name": "Shopify", 
                             "children": [
                                 {
-                                    "name": "total_male", 
-                                    "size": 78
+                                    "name": "percent_male", 
+                                    "size": 67.82608695652173
                                 }, 
                                 {
-                                    "name": "total_female", 
-                                    "size": 37
+                                    "name": "percent_female", 
+                                    "size": 32.17391304347826
                                 }
                             ]
                         }
