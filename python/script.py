@@ -11,11 +11,13 @@ def buildDataHierarchy():
         company = row['company_name']
         total_male = int(row['total_male'])
         total_female = int(row['total_female'])
+        percent_male = round(100*(total_male)/float(total_male + total_female), 1)
+        percent_female = round(100*(total_female)/float(total_male + total_female), 1)
 
         if sector == '':
             sector = 'no sector'
 
-        company_dict = { 'name': company, 'children': [{ 'name': 'percent_male', 'size': 100*(total_male)/float(total_male + total_female) }, { 'name': 'percent_female', 'size': 100*(total_female)/float(total_male + total_female) }] }
+        company_dict = { 'name': company, 'children': [{ 'name': 'percent_male', 'size': percent_male }, { 'name': 'percent_female', 'size': percent_female }] }
 
         if sector in data_dict:
             sector_dict = data_dict[sector]
@@ -43,8 +45,6 @@ def buildDataHierarchy():
 
 if __name__ == '__main__':
     buildDataHierarchy()
-
-
 
 #######################################################
 # secondary_sector = row['sector_2']

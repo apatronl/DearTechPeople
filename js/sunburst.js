@@ -12,9 +12,9 @@ var svg = d3.select('#sunburst_svg svg');
 var svgWidth = +svg.attr('width');
 var svgHeight = +svg.attr('height');
 
-var vis = svg.append("svg:g")
-    .attr("id", "container")
-    .attr("transform", "translate(" + svgWidth / 2 + "," + svgHeight / 2 + ")")
+var vis = svg.append('svg:g')
+    .attr('id', 'container')
+    .attr('transform', 'translate(' + svgWidth / 2 + ',' + svgHeight / 2 + ')')
     .on('mouseleave', mouseleave);
 
 var padding = {t: 60, r: 50, b: 60, l: 50};
@@ -23,7 +23,7 @@ var colors = {white: '#fff', lightGray: '#888', purple: '#a442f4'};
 var chartWidth = (svgWidth * 2/3) - padding.l - padding.r;
 var chartHeight = svgHeight - padding.t - padding.b;
 
-var formatNumber = d3.format(",d");
+var formatNumber = d3.format(',d');
 
 var x = d3.scaleLinear()
     .range([0, 2 * Math.PI]);
@@ -66,26 +66,26 @@ function drawVisualization(json) {
             return (d.x1 - d.x0 > 0.005);
         });
 
-    var path = vis.data([json]).selectAll("path")
+    var path = vis.data([json]).selectAll('path')
         .data(nodes)
-        .enter().append("svg:path")
-        .attr("display", function(d) { return d.depth ? null : "none"; })
-        .attr("d", arc)
-        .attr("fill-rule", "evenodd")
-        .style("fill", function(d) {
+        .enter().append('svg:path')
+        .attr('display', function(d) { return d.depth ? null : 'none'; })
+        .attr('d', arc)
+        .attr('fill-rule', 'evenodd')
+        .style('fill', function(d) {
             if (d.data.name == 'percent_female') return '#ff66b7';
             if (d.data.name == 'percent_male') return '#66bcff';
             if (d.children) return color(d.data.name);
             return color(d.parent.data.name);
         })
-        .style("opacity", 1)
+        .style('opacity', 1)
         .on('mouseover', mouseover);
 
     showMainCenterText();
 }
 
 function showMainCenterText() {
-    vis.selectAll('text').text('');
+    vis.selectAll('text').remove();
     vis.append('text')
         .attr('class', 'sunburst-text')
         .attr('x', 0)
@@ -106,11 +106,10 @@ function showMainCenterText() {
 
 function mouseover(d) {
     if (d.data.name == 'deartechpeople') {
-        vis.selectAll("path")
-            .style("opacity", 1);
+        vis.selectAll('path')
+            .style('opacity', 1);
         return;
     }
-    console.log(d);
   // var percentage = (100 * d.value / totalSize).toPrecision(3);
   // var percentageString = percentage + "%";
   // if (percentage < 0.1) {
@@ -126,23 +125,33 @@ function mouseover(d) {
     var sequenceArray = d.ancestors().reverse();
   // updateBreadcrumbs(sequenceArray, percentageString);
 
-  d3.selectAll("path")
-      .style("opacity", 0.3);
+  d3.selectAll('path')
+      .style('opacity', 0.3);
 
-  vis.selectAll("path")
+  vis.selectAll('path')
       .filter(function(node) {
           return (sequenceArray.indexOf(node) >= 0);
       })
-      .style("opacity", 1);
+      .style('opacity', 1);
     vis.selectAll('.sunburst-text').remove();
     vis.append('text')
         .attr('class', 'sunburst-text')
         .text(toTitleCase(d.data.name));
+    mouseoverPartition(d);
 }
 
 function mouseleave(d) {
-    vis.selectAll("path")
-        .style("opacity", 1);
+    // Deactivate all segments during transition.
+    vis.selectAll('path').on('mouseover', null);
+
+    vis.selectAll('path')
+        .transition()
+        .duration(500)
+        .style('opacity', 1)
+        .on('end', function() {
+            d3.select(this).on('mouseover', mouseover);
+        });
+
     showMainCenterText();
 }
 
@@ -153,6 +162,39 @@ function mouseleave(d) {
     3 - Company
     4 - Gender Distribution
 **/
+
+function mouseoverPartition(d) {
+    switch (d.depth) {
+        case 4:
+            mouseoverGender(d);
+            break;
+        default:
+            return;
+    }
+}
+
+function mouseoverGender(d) {
+    var companyName = d.parent.data.name;
+    var percent = d.value;
+    var gender = d.data.name == 'percent_female' ? 'Female' : 'Male';
+    vis.selectAll('.sunburst-text').remove();
+    vis.append('text')
+        .attr('class', 'sunburst-text')
+        .attr('x', 0)
+        .attr('y', -20)
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 5)
+        .text(companyName + ' is')
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text(percent +'%')
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text(gender)
+}
 
 function toTitleCase(str) {
     return str.replace(/\w\S*/g, function(txt){
