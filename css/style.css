@@ -4,12 +4,7 @@ body {
 
 h1, p, a {
 	font-family: "Lucida Sans Typewriter";
-    /* , "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; */
 	font-size: 24px;
-	/*font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px; */
 }
 
 p, a {
@@ -22,4 +17,11 @@ a:hover {
 
 path {
   stroke: #fff;
+}
+
+.sunburst-text {
+    font-family: "Lucida Sans Typewriter";
+    text-anchor: middle;
+    alignment-baseline: middle;
+    fill: white;
 }

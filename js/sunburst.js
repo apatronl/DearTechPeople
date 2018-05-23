@@ -69,7 +69,7 @@ function drawVisualization(json) {
     var path = vis.data([json]).selectAll("path")
         .data(nodes)
         .enter().append("svg:path")
-        //.attr("display", function(d) { return d.depth ? null : "none"; })
+        .attr("display", function(d) { return d.depth ? null : "none"; })
         .attr("d", arc)
         .attr("fill-rule", "evenodd")
         .style("fill", function(d) {
@@ -78,10 +78,36 @@ function drawVisualization(json) {
         })
         .style("opacity", 1)
         .on('mouseover', mouseover);
+
+    showMainCenterText();
+}
+
+function showMainCenterText() {
+    vis.selectAll('text').text('');
+    vis.append('text')
+        .attr('class', 'sunburst-text')
+        .attr('x', 0)
+        .attr('y', -20)
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 5)
+        .text('"Most of us agree')
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text('that tech could be a')
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text('little more diverse."')
 }
 
 function mouseover(d) {
-    console.log(d);
+    if (d.data.name == 'deartechpeople') {
+        vis.selectAll("path")
+            .style("opacity", 1);
+        return;
+    }
   // var percentage = (100 * d.value / totalSize).toPrecision(3);
   // var percentageString = percentage + "%";
   // if (percentage < 0.1) {
@@ -94,23 +120,25 @@ function mouseover(d) {
   // d3.select("#explanation")
   //     .style("visibility", "");
   //
-  var sequenceArray = d.ancestors().reverse();
-  sequenceArray.shift(); // remove root node from the array
+    var sequenceArray = d.ancestors().reverse();
   // updateBreadcrumbs(sequenceArray, percentageString);
 
-  // Fade all the segments.
   d3.selectAll("path")
       .style("opacity", 0.3);
 
-  // Then highlight only those that are an ancestor of the current segment.
   vis.selectAll("path")
       .filter(function(node) {
-                return (sequenceArray.indexOf(node) >= 0);
-              })
+          return (sequenceArray.indexOf(node) >= 0);
+      })
       .style("opacity", 1);
+    vis.selectAll('.sunburst-text').remove();
+    vis.append('text')
+        .attr('class', 'sunburst-text')
+        .text(d.data.name);
 }
 
 function mouseleave(d) {
-  vis.selectAll("path")
-      .style("opacity", 1);
+    vis.selectAll("path")
+        .style("opacity", 1);
+    showMainCenterText();
 }
