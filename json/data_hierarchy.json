@@ -7,7 +7,19 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "BuzzFeed"
+                        {
+                            "name": "BuzzFeed", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 669
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 838
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -18,18 +30,102 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "Airbnb", 
-                        "Chariot", 
-                        "GoFundMe", 
-                        "Opendoor", 
-                        "Patreon", 
-                        "SeatGeek"
+                        {
+                            "name": "Airbnb", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 1676
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 1505
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Chariot", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 74
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 60
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "GoFundMe", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 137
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 130
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Opendoor", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 232
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 147
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Patreon", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 69
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 53
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "SeatGeek", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 143
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 60
+                                }
+                            ]
+                        }
                     ]
                 }, 
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Knotel"
+                        {
+                            "name": "Knotel", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 62
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 37
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -40,14 +136,110 @@
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Aryaka Networks", 
-                        "Blue Jeans Network", 
-                        "Digital Ocean", 
-                        "Docker", 
-                        "Pivotal", 
-                        "Rubrik", 
-                        "Twilio", 
-                        "Zoom"
+                        {
+                            "name": "Aryaka Networks", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 177
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 57
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Blue Jeans Network", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 171
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 86
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Digital Ocean", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 234
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 84
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Docker", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 348
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 86
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Pivotal", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 907
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 329
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Rubrik", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 548
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 118
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Twilio", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 505
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 257
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Zoom", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 379
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 155
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -58,20 +250,128 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "Affirm", 
-                        "Credit Karma", 
-                        "Robinhood", 
-                        "SoFi"
+                        {
+                            "name": "Affirm", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 202
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 94
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Credit Karma", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 437
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 223
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Robinhood", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 134
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 50
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "SoFi", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 540
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 347
+                                }
+                            ]
+                        }
                     ]
                 }, 
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Blend", 
-                        "Funding Circle", 
-                        "Plaid", 
-                        "Square", 
-                        "Stripe"
+                        {
+                            "name": "Blend", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 166
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 79
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Funding Circle", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 138
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 86
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Plaid", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 76
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 33
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Square", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 1223
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 766
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Stripe", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 515
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 292
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -82,7 +382,19 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "Coinbase"
+                        {
+                            "name": "Coinbase", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 171
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 67
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -93,7 +405,19 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "DraftKings"
+                        {
+                            "name": "DraftKings", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 327
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 78
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -104,13 +428,97 @@
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Buffer", 
-                        "Intercom", 
-                        "LiveRamp", 
-                        "Optimizely", 
-                        "SendGrid", 
-                        "Zendesk", 
-                        "Zenreach"
+                        {
+                            "name": "Buffer", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 52
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 23
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Intercom", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 265
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 160
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "LiveRamp", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 223
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 139
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Optimizely", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 292
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 140
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "SendGrid", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 279
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 132
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Zendesk", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 684
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 463
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Zenreach", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 161
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 55
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -121,13 +529,97 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "GlassDoor", 
-                        "Medium", 
-                        "Pinterest", 
-                        "Quora", 
-                        "Reddit", 
-                        "Snap", 
-                        "Strava"
+                        {
+                            "name": "GlassDoor", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 446
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 331
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Medium", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 191
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 137
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Pinterest", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 779
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 706
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Quora", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 139
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 97
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Reddit", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 199
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 99
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Snap", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 1548
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 947
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Strava", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 129
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 48
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -138,13 +630,37 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "Dropbox"
+                        {
+                            "name": "Dropbox", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 1003
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 632
+                                }
+                            ]
+                        }
                     ]
                 }, 
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Box"
+                        {
+                            "name": "Box", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 976
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 561
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -155,16 +671,76 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "Cruise Automation", 
-                        "Magic Leap", 
-                        "Ring", 
-                        "Waymo"
+                        {
+                            "name": "Cruise Automation", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 389
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 119
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Magic Leap", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 840
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 241
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Ring", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 318
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 134
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Waymo", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 345
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 103
+                                }
+                            ]
+                        }
                     ]
                 }, 
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Snowflake"
+                        {
+                            "name": "Snowflake", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 236
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 65
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -175,21 +751,141 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "Hudl"
+                        {
+                            "name": "Hudl", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 307
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 133
+                                }
+                            ]
+                        }
                     ]
                 }, 
                 {
                     "name": "enterprise", 
                     "children": [
-                        "AppDynamics", 
-                        "Cohesity", 
-                        "CultureAmp", 
-                        "Databricks", 
-                        "Looker", 
-                        "Medallia", 
-                        "New Relic", 
-                        "Planet", 
-                        "Splunk"
+                        {
+                            "name": "AppDynamics", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 859
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 258
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Cohesity", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 232
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 43
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "CultureAmp", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 85
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 81
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Databricks", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 202
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 53
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Looker", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 246
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 115
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Medallia", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 521
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 365
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "New Relic", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 706
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 342
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Planet", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 263
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 111
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Splunk", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 1588
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 631
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -200,15 +896,63 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "US Digital Services"
+                        {
+                            "name": "US Digital Services", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 72
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 60
+                                }
+                            ]
+                        }
                     ]
                 }, 
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Glint", 
-                        "Namely", 
-                        "Zenefits"
+                        {
+                            "name": "Glint", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 79
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 55
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Namely", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 252
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 157
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Zenefits", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 332
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 234
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -219,18 +963,102 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "23andMe", 
-                        "Omada Health", 
-                        "Oscar Health"
+                        {
+                            "name": "23andMe", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 183
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 194
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Omada Health", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 88
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 102
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Oscar Health", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 260
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 208
+                                }
+                            ]
+                        }
                     ]
                 }, 
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Clover Health", 
-                        "Collective Health", 
-                        "Flatiron Health", 
-                        "Grail"
+                        {
+                            "name": "Clover Health", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 134
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 203
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Collective Health", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 136
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 184
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Flatiron Health", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 241
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 279
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Grail", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 126
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 117
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -241,21 +1069,141 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "Evernote", 
-                        "Github", 
-                        "Zapier"
+                        {
+                            "name": "Evernote", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 252
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 138
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Github", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 519
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 254
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Zapier", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 57
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 27
+                                }
+                            ]
+                        }
                     ]
                 }, 
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Checkr", 
-                        "Flexport", 
-                        "Gusto", 
-                        "Invision", 
-                        "ProCore", 
-                        "Replicon", 
-                        "Slack"
+                        {
+                            "name": "Checkr", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 80
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 57
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Flexport", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 569
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 377
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Gusto", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 235
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 243
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Invision", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 254
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 136
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "ProCore", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 643
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 355
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Replicon", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 281
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 73
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Slack", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 533
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 378
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -266,18 +1214,102 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "Dashlane"
+                        {
+                            "name": "Dashlane", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 87
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 28
+                                }
+                            ]
+                        }
                     ]
                 }, 
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Cybereason", 
-                        "Cylance", 
-                        "Duo Security", 
-                        "Menlo Security", 
-                        "Okta", 
-                        "Shape Security"
+                        {
+                            "name": "Cybereason", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 249
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 83
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Cylance", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 594
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 186
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Duo Security", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 356
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 174
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Menlo Security", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 84
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 15
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Okta", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 1443
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 546
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Shape Security", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 137
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 43
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -288,13 +1320,37 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "Udacity"
+                        {
+                            "name": "Udacity", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 400
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 232
+                                }
+                            ]
+                        }
                     ]
                 }, 
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Clever"
+                        {
+                            "name": "Clever", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 61
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 52
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -305,23 +1361,167 @@
                 {
                     "name": "consumer", 
                     "children": [
-                        "Blue Apron", 
-                        "Casper", 
-                        "DoorDash", 
-                        "Eventbrite", 
-                        "Everlane", 
-                        "Glossier", 
-                        "Houzz", 
-                        "Instacart", 
-                        "Rent the Runway", 
-                        "StitchFix", 
-                        "Wish"
+                        {
+                            "name": "Blue Apron", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 450
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 369
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Casper", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 198
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 176
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "DoorDash", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 680
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 314
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Eventbrite", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 403
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 307
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Everlane", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 53
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 113
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Glossier", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 47
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 224
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Houzz", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 430
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 977
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Instacart", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 451
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 391
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Rent the Runway", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 125
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 305
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "StitchFix", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 363
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 1731
+                                }
+                            ]
+                        }, 
+                        {
+                            "name": "Wish", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 166
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 147
+                                }
+                            ]
+                        }
                     ]
                 }, 
                 {
                     "name": "enterprise", 
                     "children": [
-                        "Shopify"
+                        {
+                            "name": "Shopify", 
+                            "children": [
+                                {
+                                    "name": "total_male", 
+                                    "size": 78
+                                }, 
+                                {
+                                    "name": "total_female", 
+                                    "size": 37
+                                }
+                            ]
+                        }
                     ]
                 }
             ]

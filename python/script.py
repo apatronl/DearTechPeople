@@ -9,19 +9,23 @@ def buildDataHierarchy():
         sector = row['sector_1']
         customer_base = row['customer_base_1']
         company = row['company_name']
+        total_male = int(row['total_male'])
+        total_female = int(row['total_female'])
 
         if sector == '':
             sector = 'no sector'
+
+        company_dict = { 'name': company, 'children': [{ 'name': 'total_male', 'size': total_male }, { 'name': 'total_female', 'size': total_female }] }
 
         if sector in data_dict:
             sector_dict = data_dict[sector]
             if customer_base in sector_dict:
                 company_list = sector_dict[customer_base]
-                company_list.append(company)
+                company_list.append(company_dict)
             else:
-                sector_dict[customer_base] = [company]
+                sector_dict[customer_base] = [company_dict]
         else:
-            data_dict[sector] = {customer_base: [company]}
+            data_dict[sector] = {customer_base: [company_dict]}
 
     data = {'name': 'deartechpeople', 'children': []}
     for (sector, value) in data_dict.items():

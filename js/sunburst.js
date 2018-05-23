@@ -14,7 +14,8 @@ var svgHeight = +svg.attr('height');
 
 var vis = svg.append("svg:g")
     .attr("id", "container")
-    .attr("transform", "translate(" + svgWidth / 2 + "," + svgHeight / 2 + ")");
+    .attr("transform", "translate(" + svgWidth / 2 + "," + svgHeight / 2 + ")")
+    .on('mouseleave', mouseleave);
 
 var padding = {t: 60, r: 50, b: 60, l: 50};
 var colors = {white: '#fff', lightGray: '#888', purple: '#a442f4'};
@@ -58,7 +59,7 @@ function drawVisualization(json) {
         .sum(function(d) { return d.size; })
         .sort(function(a, b) { return b.value - a.value; });
 
-    root.count();
+    // root.count();
 
     var nodes = partition(root).descendants()
         .filter(function(d) {
@@ -72,12 +73,44 @@ function drawVisualization(json) {
         .attr("d", arc)
         .attr("fill-rule", "evenodd")
         .style("fill", function(d) {
-            // while (!parent.parent) {}
             if (d.children) return color(d.data.name);
             return color(d.parent.data.name);
         })
         .style("opacity", 1)
-        .on('mouseover', function(d) {
-            console.log(d);
-        });
+        .on('mouseover', mouseover);
+}
+
+function mouseover(d) {
+    console.log(d);
+  // var percentage = (100 * d.value / totalSize).toPrecision(3);
+  // var percentageString = percentage + "%";
+  // if (percentage < 0.1) {
+  //   percentageString = "< 0.1%";
+  // }
+  //
+  // d3.select("#percentage")
+  //     .text(percentageString);
+  //
+  // d3.select("#explanation")
+  //     .style("visibility", "");
+  //
+  var sequenceArray = d.ancestors().reverse();
+  sequenceArray.shift(); // remove root node from the array
+  // updateBreadcrumbs(sequenceArray, percentageString);
+
+  // Fade all the segments.
+  d3.selectAll("path")
+      .style("opacity", 0.3);
+
+  // Then highlight only those that are an ancestor of the current segment.
+  vis.selectAll("path")
+      .filter(function(node) {
+                return (sequenceArray.indexOf(node) >= 0);
+              })
+      .style("opacity", 1);
+}
+
+function mouseleave(d) {
+  vis.selectAll("path")
+      .style("opacity", 1);
 }
