@@ -4,20 +4,27 @@
  * @author Alejandrina Patrón
  */
 
-var highlighted = 1;
-var visible = 0.8;
+var visible = 1;
 var invisible = 0.3;
+var padding = {t: 60, r: 30, b: 60, l: 30};
 
 var svg = d3.select('#sunburst_svg svg');
 var svgWidth = +svg.attr('width');
 var svgHeight = +svg.attr('height');
 
+var radius = (svgWidth - padding.l - padding.r) / 4;
+
 var vis = svg.append('svg:g')
     .attr('id', 'container')
-    .attr('transform', 'translate(' + svgWidth / 2 + ',' + svgHeight / 2 + ')')
+    .attr('transform', 'translate(' + (padding.l + radius) + ',' + svgHeight / 2 + ')')
     .on('mouseleave', mouseleave);
 
-var padding = {t: 60, r: 50, b: 60, l: 50};
+var visDetails = svg.append('g')
+    .attr('id', 'details_container')
+    .attr('transform', 'translate(' + (padding.l + 3*svgWidth/4) + ',' + svgHeight / 2 + ')');
+
+visDetails.append('text').attr('class', 'details-text').text('Test');
+
 var colors = {white: '#fff', lightGray: '#888', purple: '#a442f4'};
 
 var chartWidth = (svgWidth * 2/3) - padding.l - padding.r;
@@ -33,8 +40,6 @@ var y = d3.scaleSqrt()
 
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
-var radius = 280;
-
 var partition = d3.partition()
     .size([2 * Math.PI, radius * radius]);
 
@@ -49,7 +54,14 @@ d3.json('./json/data_hierarchy.json', function(error, json) {
         console.error(error);
         return;
     }
-    drawVisualization(json);
+    d3.csv('./data/DearTechPeople-Data.csv', function(error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data);
+        drawVisualization(json);
+    });
 });
 
 /** Helper functions **/
@@ -107,32 +119,19 @@ function showMainCenterText() {
 function mouseover(d) {
     if (d.data.name == 'deartechpeople') {
         vis.selectAll('path')
-            .style('opacity', 1);
+            .style('opacity', visible);
         return;
     }
-  // var percentage = (100 * d.value / totalSize).toPrecision(3);
-  // var percentageString = percentage + "%";
-  // if (percentage < 0.1) {
-  //   percentageString = "< 0.1%";
-  // }
-  //
-  // d3.select("#percentage")
-  //     .text(percentageString);
-  //
-  // d3.select("#explanation")
-  //     .style("visibility", "");
-  //
     var sequenceArray = d.ancestors().reverse();
-  // updateBreadcrumbs(sequenceArray, percentageString);
 
-  d3.selectAll('path')
-      .style('opacity', 0.3);
+    d3.selectAll('path')
+        .style('opacity', invisible);
 
-  vis.selectAll('path')
-      .filter(function(node) {
-          return (sequenceArray.indexOf(node) >= 0);
-      })
-      .style('opacity', 1);
+    vis.selectAll('path')
+        .filter(function(node) {
+            return (sequenceArray.indexOf(node) >= 0);
+        })
+        .style('opacity', visible);
     vis.selectAll('.sunburst-text').remove();
     vis.append('text')
         .attr('class', 'sunburst-text')
@@ -147,7 +146,7 @@ function mouseleave(d) {
     vis.selectAll('path')
         .transition()
         .duration(500)
-        .style('opacity', 1)
+        .style('opacity', visible)
         .on('end', function() {
             d3.select(this).on('mouseover', mouseover);
         });

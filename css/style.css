@@ -7,6 +7,13 @@ h1, p, a {
 	font-size: 24px;
 }
 
+p {
+	font-family: "Lucida Sans Typewriter";
+	font-size: 14px;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
 p, a {
     color: white;
 }
@@ -20,6 +27,13 @@ path {
 }
 
 .sunburst-text {
+    font-family: "Lucida Sans Typewriter";
+    text-anchor: middle;
+    alignment-baseline: middle;
+    fill: white;
+}
+
+.details-text {
     font-family: "Lucida Sans Typewriter";
     text-anchor: middle;
     alignment-baseline: middle;
