@@ -21,11 +21,25 @@ var vis = svg.append('svg:g')
 
 var visDetails = svg.append('g')
     .attr('id', 'details_container')
-    .attr('transform', 'translate(' + (padding.l + 3*svgWidth/4) + ',' + svgHeight / 2 + ')');
+    .attr('transform', 'translate(' + (padding.l + svgWidth/2) + ',' + padding.t + ')');
 
-visDetails.append('text').attr('class', 'details-text').text('Test');
+// visDetails.append('text')
+//     .attr('class', 'details-text')
+//     .attr('x', 0)
+//     .attr('y', -10)
+//     .append('svg:tspan')
+//     .attr('x', 0)
+//     .attr('dy', 5)
+//     .text('Hover + Click over the sunburst chart to see ')
+//     .append('svg:tspan')
+//     .attr('x', 0)
+//     .attr('dy', 20)
+//     .text('more details about each company.');
 
 var colors = {white: '#fff', lightGray: '#888', purple: '#a442f4'};
+
+var genders = ['male', 'female'];
+var races = ['white', 'asian', 'black', 'latinx', 'other'];
 
 var chartWidth = (svgWidth * 2/3) - padding.l - padding.r;
 var chartHeight = svgHeight - padding.t - padding.b;
@@ -59,7 +73,19 @@ d3.json('./json/data_hierarchy.json', function(error, json) {
             console.error(error);
             return;
         }
-        console.log(data);
+        // dataByCompany = d3.nest()
+        //                   .key(function(d){ return d.company_name; })
+        //                   .entries(data);
+        biPartiteDataByCompany = {};
+        data.forEach(function(d) {
+            var companyData = [];
+            genders.forEach(function(g) {
+                races.forEach(function(r) {
+                    companyData.push([g, r, d['overall_' + g + '_' + r]]);
+                });
+            });
+            biPartiteDataByCompany[d.company_name] = companyData;
+        });
         drawVisualization(json);
     });
 });
@@ -164,12 +190,25 @@ function mouseleave(d) {
 
 function mouseoverPartition(d) {
     switch (d.depth) {
+        case 3:
+            mouseoverCompany(d);
+            break;
         case 4:
             mouseoverGender(d);
             break;
         default:
             return;
     }
+}
+
+function mouseoverCompany(d) {
+    var bP = viz.biPartite()
+                .fill(fill())
+                .data(biPartiteDataByCompany[d.data.name])
+                .orient('horizontal')
+                .width((svgWidth / 2) - padding.l - padding.r)
+                .height(svgHeight - 2*padding.t - padding.b);
+    visDetails.call(bP);
 }
 
 function mouseoverGender(d) {
@@ -192,7 +231,12 @@ function mouseoverGender(d) {
         .append('svg:tspan')
         .attr('x', 0)
         .attr('dy', 20)
-        .text(gender)
+        .text(gender);
+}
+
+function fill() {
+  var color = {'female':'#ff66b7','male':'#66bcff'}
+  return function(d) { return color[d.primary] }
 }
 
 function toTitleCase(str) {

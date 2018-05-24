@@ -39,3 +39,18 @@ path {
     alignment-baseline: middle;
     fill: white;
 }
+
+/*
+    BiPartite Graph
+*/
+
+.viz-biPartite rect{
+	shape-rendering:crispEdges;
+}
+
+.viz-biPartite-mainBar{
+  fill-opacity: 0;
+  stroke-width: 0.5px;
+  stroke: rgb(0, 0, 0);
+  stroke-opacity: 0;
+}
