@@ -12,6 +12,9 @@ var svg = d3.select('#sunburst_svg svg');
 var svgWidth = +svg.attr('width');
 var svgHeight = +svg.attr('height');
 
+var biPartiteWidth = (svgWidth / 2) - padding.l - padding.r;
+var biPartiteHeight = svgHeight - 3*padding.t - padding.b;
+
 var radius = (svgWidth - padding.l - padding.r) / 4;
 
 var vis = svg.append('svg:g')
@@ -21,7 +24,7 @@ var vis = svg.append('svg:g')
 
 var visDetails = svg.append('g')
     .attr('id', 'details_container')
-    .attr('transform', 'translate(' + (padding.l + svgWidth/2) + ',' + padding.t + ')');
+    .attr('transform', 'translate(' + (padding.l + svgWidth/2) + ',' + ((svgHeight/2) - (biPartiteHeight/2)) + ')');
 
 // visDetails.append('text')
 //     .attr('class', 'details-text')
@@ -202,13 +205,62 @@ function mouseoverPartition(d) {
 }
 
 function mouseoverCompany(d) {
-    var bP = viz.biPartite()
+    bP = viz.biPartite()
                 .fill(fill())
                 .data(biPartiteDataByCompany[d.data.name])
                 .orient('horizontal')
-                .width((svgWidth / 2) - padding.l - padding.r)
-                .height(svgHeight - 2*padding.t - padding.b);
-    visDetails.call(bP);
+                .width(biPartiteWidth)
+                .height(biPartiteHeight);
+    bPg = visDetails.call(bP);
+
+    bPg.selectAll(".viz-biPartite-mainBar")
+        .append("text")
+        .attr("class","perc")
+        .text(function(d) {
+            if (d.percent == 0) return '';
+            return d3.format(".0%")(d.percent);
+        });
+
+    bPg.selectAll('.viz-biPartite-mainBar').append('text')
+        .attr('class', 'perc')
+        .attr('text-anchor', 'start')
+        .attr('alignment-baseline' ,d=>(d.part=='primary' ? 'baseline' : 'hanging'))
+        .attr('transform', function(d) {
+            var dx = d.part == 'primary' ? -d.width + 30 : -d.width/2;
+            var dy = d.part == 'primary' ? -2*d.height - 5 : 2*d.height + 5;
+            return 'translate(' + dx + ',' + dy +') rotate(300)';
+        })
+    	.text(function(d) {
+            if (d.percent == 0) return '';
+            return toTitleCase(d.key);
+        })
+        .attr('fill', 'white');
+
+    bPg.selectAll(".viz-biPartite-mainBar")
+    	.on("mouseover", bPgMouseover)
+    	.on("mouseout", bPgMouseout);
+}
+
+function bPgMouseover(d) {
+    bP.mouseover(d)
+
+    bPg.selectAll(".viz-biPartite-mainBar")
+        .select(".perc")
+        .text(function(d) {
+            if (d.percent == 0) return '';
+            return d3.format(".0%")(d.percent)
+        });
+}
+
+function bPgMouseout(d) {
+    bP.mouseout(d)
+
+    bPg.selectAll(".viz-biPartite-mainBar")
+        .select(".perc")
+        .text(function(d) {
+            if (d.percent == 0) return '';
+            return d3.format(".0%")(d.percent)
+        });
 }
 
 function mouseoverGender(d) {
