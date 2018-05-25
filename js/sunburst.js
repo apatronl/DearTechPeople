@@ -26,18 +26,30 @@ var visDetails = svg.append('g')
     .attr('id', 'details_container')
     .attr('transform', 'translate(' + (padding.l + svgWidth/2) + ',' + ((svgHeight/2) - (biPartiteHeight/2)) + ')');
 
-// visDetails.append('text')
-//     .attr('class', 'details-text')
-//     .attr('x', 0)
-//     .attr('y', -10)
-//     .append('svg:tspan')
-//     .attr('x', 0)
-//     .attr('dy', 5)
-//     .text('Hover + Click over the sunburst chart to see ')
-//     .append('svg:tspan')
-//     .attr('x', 0)
-//     .attr('dy', 20)
-//     .text('more details about each company.');
+visDetails.append('text')
+    .attr('class', 'details-text-company')
+    .attr('transform', 'translate(' + (biPartiteWidth/2) + ', -60)');
+
+visDetails.append('text')
+    .attr('class', 'details-text-sector')
+    .attr('transform', 'translate(' + (biPartiteWidth/2) + ', ' + (biPartiteHeight + padding.b)+ ')');
+
+visDetails.append('text')
+    .attr('class', 'details-text-customer')
+    .attr('transform', 'translate(' + (biPartiteWidth/2) + ', ' + (biPartiteHeight + padding.b + 20)+ ')');
+
+visDetails.append('text')
+    .attr('class', 'details-text-x')
+    .attr('x', biPartiteWidth/2)
+    .attr('y', biPartiteHeight/2)
+    .append('svg:tspan')
+    .attr('x', biPartiteWidth/2)
+    .attr('dy', 5)
+    .text('Hover over the sunburst chart to see ')
+    .append('svg:tspan')
+    .attr('x', biPartiteWidth/2)
+    .attr('dy', 20)
+    .text('more details about each company.');
 
 var colors = {white: '#fff', lightGray: '#888', purple: '#a442f4'};
 
@@ -76,9 +88,14 @@ d3.json('./json/data_hierarchy.json', function(error, json) {
             console.error(error);
             return;
         }
-        // dataByCompany = d3.nest()
-        //                   .key(function(d){ return d.company_name; })
-        //                   .entries(data);
+        dataByCompanyDict = {};
+        dataByCompany = d3.nest()
+                          .key(function(d){ return d.company_name; })
+                          .entries(data)
+                          .forEach(function(d) {
+                              dataByCompanyDict[d.key] = d.values[0];
+                          });
+        console.log(dataByCompanyDict);
         biPartiteDataByCompany = {};
         data.forEach(function(d) {
             var companyData = [];
@@ -197,6 +214,7 @@ function mouseoverPartition(d) {
             mouseoverCompany(d);
             break;
         case 4:
+            mouseoverCompany(d.parent);
             mouseoverGender(d);
             break;
         default:
@@ -205,6 +223,14 @@ function mouseoverPartition(d) {
 }
 
 function mouseoverCompany(d) {
+    visDetails.select('.details-text-x').remove();
+    visDetails.select('.details-text-company').text(toTitleCase(d.data.name));
+    visDetails.select('.details-text-sector').text(function() {
+        var sector = dataByCompanyDict[d.data.name]['sector_1'];
+        if (sector) return 'Sector: ' + toTitleCase(sector);
+        return 'No Sector'
+    });
+    visDetails.select('.details-text-customer').text('Customer Base: ' + toTitleCase(dataByCompanyDict[d.data.name]['customer_base_1']));
     bP = viz.biPartite()
                 .fill(fill())
                 .data(biPartiteDataByCompany[d.data.name])
@@ -213,7 +239,7 @@ function mouseoverCompany(d) {
                 .height(biPartiteHeight);
     bPg = visDetails.call(bP);
 
-    bPg.selectAll(".viz-biPartite-mainBar")
+    bPg.selectAll('.viz-biPartite-mainBar')
         .append("text")
         .attr("class","perc")
         .text(function(d) {
@@ -226,9 +252,10 @@ function mouseoverCompany(d) {
         .attr('text-anchor', 'start')
         .attr('alignment-baseline' ,d=>(d.part=='primary' ? 'baseline' : 'hanging'))
         .attr('transform', function(d) {
-            var dx = d.part == 'primary' ? -d.width + 30 : -d.width/2;
-            var dy = d.part == 'primary' ? -2*d.height - 5 : 2*d.height + 5;
-            return 'translate(' + dx + ',' + dy +') rotate(300)';
+            var dx = d.part == 'primary' ? 0 : -10;
+            var dy = d.part == 'primary' ? -d.height - 10 : 2*d.height + 5;
+            var dr = d.part == 'primary' ? 0 : 300;
+            return 'translate(' + dx + ',' + dy +') rotate(' + dr + ')';
         })
     	.text(function(d) {
             if (d.percent == 0) return '';
@@ -236,9 +263,9 @@ function mouseoverCompany(d) {
         })
         .attr('fill', 'white');
 
-    bPg.selectAll(".viz-biPartite-mainBar")
-    	.on("mouseover", bPgMouseover)
-    	.on("mouseout", bPgMouseout);
+    bPg.selectAll('.viz-biPartite-mainBar')
+    	.on('mouseover', bPgMouseover)
+    	.on('mouseout', bPgMouseout);
 }
 
 function bPgMouseover(d) {

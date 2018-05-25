@@ -33,11 +33,35 @@ path {
     fill: white;
 }
 
-.details-text {
+.details-text-x {
     font-family: "Lucida Sans Typewriter";
     text-anchor: middle;
     alignment-baseline: middle;
     fill: white;
+}
+
+.details-text-company {
+    font-family: "Lucida Sans Typewriter";
+    text-anchor: middle;
+    alignment-baseline: middle;
+    fill: white;
+    font-weight: bold;
+}
+
+.details-text-sector {
+    font-family: "Lucida Sans Typewriter";
+    text-anchor: middle;
+    alignment-baseline: middle;
+    fill: white;
+    font-size:13px;
+}
+
+.details-text-customer {
+    font-family: "Lucida Sans Typewriter";
+    text-anchor: middle;
+    alignment-baseline: middle;
+    fill: white;
+    font-size:13px;
 }
 
 /*
@@ -50,7 +74,7 @@ path {
 
 .viz-biPartite-mainBar{
     fill-opacity: 0;
-    stroke-width: 0.7px;
+    stroke-width: 1.8px;
     stroke: rgb(255, 255, 255);
     stroke-opacity: 0;
 }
